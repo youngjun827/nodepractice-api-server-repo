@@ -1,0 +1,25 @@
+GET http://localhost:3000/api/members
+
+###
+POST http://localhost:3000/api/members
+Content-Type: application/json
+
+{
+  "name": "James",
+  "team": "Engineering",
+  "position": "IOS Developer",
+  "emailAddress": "james@google.com",
+  "phoneNumber": "010-xxxx-xxxx",
+  "admissionDate": "2003/06/12",
+  "birthday": "1993/09/27",
+  "profileImage": "profile11.png"
+}
+
+###
+PUT http://localhost:3000/api/members/1
+Content-Type: application/json
+
+{ "name": "James" }
+
+###
+DELETE http://localhost:3000/api/members/11
